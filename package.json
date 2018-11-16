@@ -1,6 +1,6 @@
 {
     "name": "cy-component-maker",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "build react-component kit",
     "main": "./lib/index.js",
     "preferGlobal": "true",
