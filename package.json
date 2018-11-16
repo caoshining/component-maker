@@ -1,5 +1,5 @@
 {
-    "name": "react-maker",
+    "name": "component-maker",
     "version": "1.0.0",
     "description": "build react-component kit",
     "main": "./lib/index.js",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sunbrother/react-component-maker.git"
+        "url": "git+https://github.com/caoshining/component-maker.git"
     },
     "keywords": [
         "react",
@@ -23,7 +23,7 @@
     ],
     "author": "Morgan",
     "license": "ISC",
-    "homepage": "https://github.com/sunbrother/react-component-maker#readme",
+    "homepage": "https://github.com/caoshining/component-maker#README-zh.md",
     "dependencies": {
         "commander": "^2.9.0"
     }
