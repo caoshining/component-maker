@@ -1,0 +1,30 @@
+{
+    "name": "react-maker",
+    "version": "1.0.0",
+    "description": "build react-component kit",
+    "main": "./lib/index.js",
+    "preferGlobal": "true",
+    "bin": {
+        "mkreact": "./bin/mkreact.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "push": "git add . && git commit -m 'page update' && git push -u origin master"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sunbrother/react-component-maker.git"
+    },
+    "keywords": [
+        "react",
+        "node",
+        "npm",
+        "javascript"
+    ],
+    "author": "Morgan",
+    "license": "ISC",
+    "homepage": "https://github.com/sunbrother/react-component-maker#readme",
+    "dependencies": {
+        "commander": "^2.9.0"
+    }
+}
