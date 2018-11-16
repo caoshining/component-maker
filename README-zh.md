@@ -17,9 +17,9 @@
 
 ```
 npm i -g component-maker
-mkreact App
+cy-mkcomponent App
 //此时你创建了一个名字为App的组件
-mkreact Header,Body,Footer
+cy-mkcomponent Header,Body,Footer
 //此时你创建了三个组件，分别为Header,Body,Footer
 ```
 
