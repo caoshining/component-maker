@@ -25,17 +25,17 @@ mkreact Header,Body,Footer
 
 #### 创建样式为Scss的组件
 ```
-mkreact -s Body
+cy-mkcomponent -s Body
 //创建Body组件，但是样式文件为Scss
 ```
 #### 创建样式为Less的组件
 ```
-#### mkreact -l Body
+#### cy-mkcomponent -l Body
 //创建Body组件，但是样式文件为Scsss
 ```
 #### create React component with stateless
 ```
-mkreact -p Body
+cy-mkcomponent -p Body
 //创建Body无状态组件
 ```
 ## 组件详情

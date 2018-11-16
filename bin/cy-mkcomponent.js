@@ -21,7 +21,7 @@ function getName(name,style){
   let name
 
   program
-    .version('1.2.0')
+    .version('1.0.0')
     .option('-s --scss [names]', 'replace css to Scss', parseVal)
     .option('-l --less [names]', 'replace css to Less', parseVal)
     .option('-p --pure [names]', 'use pure component', parseVal)

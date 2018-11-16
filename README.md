@@ -18,26 +18,26 @@ support `css`,`scss`,`less`
 
 ```
 npm i -g component-maker
-mkreact App
+cy-mkcomponent App
 //you will create React component named App
-mkreact Header,Body,Footer
+cy-mkcomponent Header,Body,Footer
 //you will create React compoennts named Header,Body,Footer
 ```
 
 #### create component with Scss
 ```
-mkreact -s Body
+cy-mkcomponent -s Body
 //create React components named Body with Scss
 ```
 #### create React component with Less
 ```
-mkreact -l Body
+cy-mkcomponent -l Body
 //create React components named Body with Less
 ```
 
 #### create React component with Less
 ```
-mkreact -p Body
+cy-mkcomponent -p Body
 //you will create pure component for stateless function
 ```
 

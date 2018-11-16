@@ -1,11 +1,11 @@
 {
-    "name": "component-maker",
-    "version": "1.0.0",
+    "name": "cy-component-maker",
+    "version": "1.0.2",
     "description": "build react-component kit",
     "main": "./lib/index.js",
     "preferGlobal": "true",
     "bin": {
-        "mkreact": "./bin/mkreact.js"
+        "cy-mkcomponent": "./bin/cy-mkcomponent.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,7 +21,7 @@
         "npm",
         "javascript"
     ],
-    "author": "Morgan",
+    "author": "Morgan-Cao",
     "license": "ISC",
     "homepage": "https://github.com/caoshining/component-maker#README-zh.md",
     "dependencies": {
