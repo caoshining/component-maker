@@ -2,7 +2,7 @@
 
 一键式创建React，Vue组件
 
-## v1.2.0
+## v1.2.1
 
 支持自由选择创建`css`,`scss`,`less`
 
@@ -39,7 +39,7 @@ mkcomponent -s Body
 #### 创建样式为Less的组件
 ```
 #### mkcomponent -l Body
-//创建Body组件，但是样式文件为Scsss
+//创建Body组件，但是样式文件为less
 ```
 
 ## React组件详情
@@ -97,30 +97,20 @@ export default [name]
 ### index.vue
 ```
 <template>
-  <div class="-t">
-        -t组件
+  <div class="[name]">
+        [name]组件
     </div>
 </template>'
 <script>
 export default {
-  name: '-t'
+  name: [name]
   data(){
     return {
     }
   }
 };
 </script>
-<script>
-    export default{
-      name: '-t'
-      data(){
-        return {
-          telphone:"tel:021 61266174",
-        }
-      }
-    }
-</script>
-<style scoped lang='css' src='-t.css'>
+<style scoped lang='css' src='[name].css'>
 </style>
 ```
 ### [name].css

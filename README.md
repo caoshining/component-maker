@@ -4,7 +4,7 @@ the cli to create react components
 
 [中文版](https://github.com/caoshining/component-maker/blob/master/README-zh.md)
 
-## v1.2.0
+## v1.2.1
 
 support `css`,`scss`,`less`
 
@@ -101,33 +101,22 @@ export default [name]
 
 ## file details For Vue
 
-### index.vue
 ```
 <template>
-  <div class="-t">
-        -t组件
+  <div class="[name]">
+        [name]
     </div>
 </template>'
 <script>
 export default {
-  name: '-t'
+  name: [name]
   data(){
     return {
     }
   }
 };
 </script>
-<script>
-    export default{
-      name: '-t'
-      data(){
-        return {
-          telphone:"tel:021 61266174",
-        }
-      }
-    }
-</script>
-<style scoped lang='css' src='-t.css'>
+<style scoped lang='css' src='[name].css'>
 </style>
 ```
 ### [name].css
