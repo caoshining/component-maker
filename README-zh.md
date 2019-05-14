@@ -1,8 +1,8 @@
-# component-maker
+# mn-component-maker
 
 一键式创建React组件
 
-## v1.0.3
+## v1.0.6
 
 支持自由选择创建`css`,`scss`,`less`
 
@@ -16,28 +16,34 @@
 ### Usage
 
 ```
-npm i -g component-maker
-cy-mkcomponent App
+npm i -g mn-component-maker
+mkcomponent App
 //此时你创建了一个名字为App的组件
-cy-mkcomponent Header,Body,Footer
+mkcomponent Header,Body,Footer
 //此时你创建了三个组件，分别为Header,Body,Footer
 ```
 
 #### 创建样式为Scss的组件
 ```
-cy-mkcomponent -s Body
+mkcomponent -s Body
 //创建Body组件，但是样式文件为Scss
 ```
 #### 创建样式为Less的组件
 ```
-#### cy-mkcomponent -l Body
+#### mkcomponent -l Body
 //创建Body组件，但是样式文件为Scsss
 ```
 #### create React component with stateless
 ```
-cy-mkcomponent -p Body
+mkcomponent -p Body
 //创建Body无状态组件
 ```
+#### create Vue component with stateless
+```
+mkcomponent -t Vue Body
+//创建Body无状态组件
+```
+
 ## 组件详情
 
 一个组件为一个文件夹，文件夹目录为

@@ -5,9 +5,8 @@ const program = require('commander')
 function parseVal (val) {
   return val.split(',')
 }
-function log (name, componentStatus, style) {
-  console.log(name)
-  console.log(`you will create ${componentStatus}component ${name} with ${style}`)
+function log (name, componentStatus, style, componentType) {
+  console.log(`创建了 ${componentStatus}component ${name} with ${style} --${componentType}`)
 }
 // if use pure and scss or less both, it can find the right name
 function getName(name,style){
@@ -19,9 +18,10 @@ function getName(name,style){
   let componentStatus = ''
   let style = 'css'
   let name
-
+  let componentType = 'react'
   program
     .version('1.0.0')
+    .option('-t --type <value>', 'replace react to vue', parseVal)
     .option('-s --scss [names]', 'replace css to Scss', parseVal)
     .option('-l --less [names]', 'replace css to Less', parseVal)
     .option('-p --pure [names]', 'use pure component', parseVal)
@@ -32,22 +32,26 @@ function getName(name,style){
     componentStatus = 'pure '
     name = program.pure
   }
+  if(program.type){
+    componentType = program.type&&program.type[0].toLocaleLowerCase()==='vue'?'vue':'react'
+    // componentType = program.type?
+  }
   if (program.scss) {
     style = 'scss'
     name = getName(name,style)
-    log(name, componentStatus, style)
+    log(name, componentStatus, style,componentType)
   } else if (program.less) {
     style = 'less'
     name = getName(name,style)    
-    log(name, componentStatus, style)
+    log(name, componentStatus, style,componentType)
   } else {
     name = name || process
       .argv[2]
       .split(',')
-    log(name, componentStatus, style)
+    log(name, componentStatus, style,componentType)
   }
-  console.log(name, style, usePureComponent)
-  createReactComponent(name, style, usePureComponent)
+  // console.log(name, style, usePureComponent,componentType)
+  createReactComponent(name, style, usePureComponent,componentType)
 
   console.log('done!')
 })()

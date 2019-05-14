@@ -1,4 +1,4 @@
-# component-maker
+# mn-component-maker
 
 the cli to create react components
 
@@ -17,37 +17,47 @@ support `css`,`scss`,`less`
 ### Usage
 
 ```
-npm i -g component-maker
-cy-mkcomponent App
+npm i -g mn-component-maker
+mkcomponent App
 //you will create React component named App
-cy-mkcomponent Header,Body,Footer
+mkcomponent Header,Body,Footer
 //you will create React compoennts named Header,Body,Footer
 ```
 
 #### create component with Scss
 ```
-cy-mkcomponent -s Body
+mkcomponent -s Body
 //create React components named Body with Scss
 ```
 #### create React component with Less
 ```
-cy-mkcomponent -l Body
+mkcomponent -l Body
 //create React components named Body with Less
 ```
 
 #### create React component with Less
 ```
-cy-mkcomponent -p Body
+mkcomponent -p Body
 //you will create pure component for stateless function
 ```
 
-## component details
+#### create Vue component with stateless
+```
+mkcomponent -t Vue Body
+```
+
+## component details React
 
 
 - [name].jsx
 - [name].css
 - index.jsx
+- 
+## component details Vue
 
+- [name].css
+- index.vue
+- 
 ## file details
 
 ### [name].jsx

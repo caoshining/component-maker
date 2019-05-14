@@ -1,11 +1,11 @@
 {
-    "name": "cy-component-maker",
-    "version": "1.0.3",
+    "name": "mn-component-maker",
+    "version": "1.1.0",
     "description": "build react-component kit",
     "main": "./lib/index.js",
     "preferGlobal": "true",
     "bin": {
-        "cy-mkcomponent": "./bin/cy-mkcomponent.js"
+        "mkcomponent": "./bin/mkcomponent.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
