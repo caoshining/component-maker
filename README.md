@@ -4,7 +4,7 @@ the cli to create react components
 
 [中文版](https://github.com/caoshining/component-maker/blob/master/README-zh.md)
 
-## v1.1.1
+## v1.2.0
 
 support `css`,`scss`,`less`
 
@@ -16,12 +16,17 @@ support `css`,`scss`,`less`
 4. support stateless function(or you can say pure component)
 ### Usage
 
+###### React Component Creat
 ```
-npm i -g mn-component-maker
 mkcomponent App
 //you will create React component named App
 mkcomponent Header,Body,Footer
 //you will create React compoennts named Header,Body,Footer
+```
+###### Vue Component Creat
+```
+npm i -g mn-component-maker
+mkcomponent -l Body -t vue
 ```
 
 #### create component with Scss
@@ -48,15 +53,14 @@ mmkcomponent -l Body -t vue
 
 ## component details React
 
-
 - [name].jsx
 - [name].css
 - index.jsx
-- 
+
 ## component details Vue
 - [name].css
 - index.vue
-## file details
+## file details For React
 
 ### [name].jsx
 
@@ -93,4 +97,43 @@ export default [name];
 import [name] from './hh'
 
 export default [name]
+```
+
+## file details For Vue
+
+### index.vue
+```
+<template>
+  <div class="-t">
+        -t组件
+    </div>
+</template>'
+<script>
+export default {
+  name: '-t'
+  data(){
+    return {
+    }
+  }
+};
+</script>
+<script>
+    export default{
+      name: '-t'
+      data(){
+        return {
+          telphone:"tel:021 61266174",
+        }
+      }
+    }
+</script>
+<style scoped lang='css' src='-t.css'>
+</style>
+```
+### [name].css
+
+```
+.container {
+  
+}
 ```

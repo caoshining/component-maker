@@ -1,6 +1,6 @@
 {
     "name": "mn-component-maker",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "build react-component kit",
     "main": "./lib/index.js",
     "preferGlobal": "true",
