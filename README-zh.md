@@ -40,7 +40,7 @@ mkcomponent -p Body
 ```
 #### create Vue component with stateless
 ```
-mkcomponent -t Vue Body
+mkcomponent -l Body -t vue
 //创建Body无状态组件
 ```
 
@@ -51,6 +51,9 @@ mkcomponent -t Vue Body
 - [name].jsx
 - [name].css
 - index.jsx
+## component details Vue
+- [name].css
+- index.vue
 
 ## 文件内容
 

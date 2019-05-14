@@ -43,7 +43,7 @@ mkcomponent -p Body
 
 #### create Vue component with stateless
 ```
-mkcomponent -t Vue Body
+mmkcomponent -l Body -t vue
 ```
 
 ## component details React
@@ -54,10 +54,8 @@ mkcomponent -t Vue Body
 - index.jsx
 - 
 ## component details Vue
-
 - [name].css
 - index.vue
-- 
 ## file details
 
 ### [name].jsx
