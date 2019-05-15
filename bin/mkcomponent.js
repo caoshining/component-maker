@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 const createReactComponent = require('../lib/createReactComponent')
+const pak = require('../package.json')
 const program = require('commander')
 function parseVal (val) {
   return val.split(',')
@@ -20,12 +21,14 @@ function getName(name,style){
   let name
   let componentType = 'react'
   program
-    .version('1.0.0')
+    .version(pak.version)
     .option('-t --type <value>', 'replace react to vue', parseVal)
     .option('-s --scss [names]', 'replace css to Scss', parseVal)
     .option('-l --less [names]', 'replace css to Less', parseVal)
     .option('-p --pure [names]', 'use pure component', parseVal)
     .parse(process.argv)
+                                                             
+  if(program.args.length === 0) program.help() // 处理不带参数的情况
 
   if (program.pure) {
     usePureComponent = true
