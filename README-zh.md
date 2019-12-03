@@ -14,7 +14,7 @@
 4. 支持无状态组建（stateless function）
 
 ### Usage
-#####React组件创建使用
+##### React组件创建使用
 ```ssh
 #React组件创建使用
 npm i -g mn-component-maker
@@ -23,7 +23,7 @@ mkcomponent App
 mkcomponent Header,Body,Footer
 #此时你创建了三个组件，分别为Header,Body,Footer
 ```
-#####Vue组件创建使用
+##### Vue组件创建使用
 ```ssh
 #Vue组件创建使用
 npm i -g mn-component-maker
