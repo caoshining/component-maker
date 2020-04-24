@@ -25,10 +25,10 @@ mkcomponent Header,Body,Footer
 ```
 ##### Vue组件创建使用
 ``` js
-#Vue组件创建使用
+//Vue组件创建使用
 npm i -g mn-component-maker
 mkcomponent -l Body -t vue
-#此时你创建了一个名字为Body的组件
+//此时你创建了一个名字为Body的组件
 ```
 
 #### 创建样式为Scss的组件
