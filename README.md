@@ -17,25 +17,25 @@ support `css`,`scss`,`less`
 ### Usage
 
 ###### React Component Creat
-```
+``` js
 mkcomponent App
 //you will create React component named App
 mkcomponent Header,Body,Footer
 //you will create React compoennts named Header,Body,Footer
 ```
 ###### Vue Component Creat
-```
+``` js
 npm i -g mn-component-maker
 mkcomponent -l Body -t vue
 ```
 
 #### create component with Scss
-```
+``` js
 mkcomponent -s Body
 //create React components named Body with Scss
 ```
 #### create React component with Less
-```
+``` js
 mkcomponent -l Body
 //create React components named Body with Less
 ```
@@ -47,7 +47,7 @@ mkcomponent -p Body
 ```
 
 #### create Vue component with stateless
-```
+``` js
 mmkcomponent -l Body -t vue
 ```
 
@@ -64,7 +64,7 @@ mmkcomponent -l Body -t vue
 
 ### [name].jsx
 
-```
+``` js
 import React from 'react';
 import styles from './[name].css'
 class [name] extends React.Component {

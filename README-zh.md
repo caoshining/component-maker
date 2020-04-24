@@ -15,16 +15,16 @@
 
 ### Usage
 ##### React组件创建使用
-```ssh
-#React组件创建使用
+``` js
+// React组件创建使用
 npm i -g mn-component-maker
 mkcomponent App
-#此时你创建了一个名字为App的组件
+// 此时你创建了一个名字为App的组件
 mkcomponent Header,Body,Footer
-#此时你创建了三个组件，分别为Header,Body,Footer
+// 此时你创建了三个组件，分别为Header,Body,Footer
 ```
 ##### Vue组件创建使用
-```ssh
+``` js
 #Vue组件创建使用
 npm i -g mn-component-maker
 mkcomponent -l Body -t vue
@@ -32,13 +32,14 @@ mkcomponent -l Body -t vue
 ```
 
 #### 创建样式为Scss的组件
-```
+``` js
 mkcomponent -s Body
 //创建Body组件，但是样式文件为Scss
 ```
 #### 创建样式为Less的组件
-```
-#### mkcomponent -l Body
+
+``` js
+mkcomponent -l Body
 //创建Body组件，但是样式文件为less
 ```
 
