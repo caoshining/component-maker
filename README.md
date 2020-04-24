@@ -4,7 +4,7 @@ the cli to create react components
 
 [中文版](https://github.com/caoshining/component-maker/blob/master/README-zh.md)
 
-## v1.2.1
+## v1.2.6
 
 support `css`,`scss`,`less`
 

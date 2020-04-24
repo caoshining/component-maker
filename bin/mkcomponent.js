@@ -23,6 +23,8 @@ function getName(name, style) {
     let style = 'css'
     let name
     let componentType = 'react'
+    console.log(process.argv, 'program.args')
+
     program
         .version(pak.version)
         .option('-t --type <value>', 'replace react to vue', parseVal)
@@ -30,8 +32,7 @@ function getName(name, style) {
         .option('-l --less [names]', 'replace css to Less', parseVal)
         .option('-p --pure [names]', 'use pure component', parseVal)
         .parse(process.argv)
-
-    if (program.args.length === 0) program.help() // 处理不带参数的情况
+    if (process.argv.length < 3) program.help() // 处理不带参数的情况
 
     if (program.pure) {
         usePureComponent = true
@@ -40,7 +41,7 @@ function getName(name, style) {
     }
     if (program.type) {
         componentType = program.type && program.type[0].toLocaleLowerCase() === 'vue' ? 'vue' : 'react'
-            // componentType = program.type?
+        console.log(componentType, 'componentType')
     }
     if (program.scss) {
         style = 'scss'
@@ -57,6 +58,7 @@ function getName(name, style) {
         log(name, componentStatus, style, componentType)
     }
     // console.log(name, style, usePureComponent,componentType)
+    console.log(name, style, usePureComponent, componentType, 'name, style, usePureComponent, componentType')
     createReactComponent(name, style, usePureComponent, componentType)
 
     console.log('done!')
