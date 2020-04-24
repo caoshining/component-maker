@@ -23,7 +23,6 @@ function getName(name, style) {
     let style = 'css'
     let name
     let componentType = 'react'
-    console.log(process.argv, 'program.args')
 
     program
         .version(pak.version)
@@ -41,7 +40,6 @@ function getName(name, style) {
     }
     if (program.type) {
         componentType = program.type && program.type[0].toLocaleLowerCase() === 'vue' ? 'vue' : 'react'
-        console.log(componentType, 'componentType')
     }
     if (program.scss) {
         style = 'scss'
@@ -57,9 +55,7 @@ function getName(name, style) {
             .split(',')
         log(name, componentStatus, style, componentType)
     }
-    // console.log(name, style, usePureComponent,componentType)
-    console.log(name, style, usePureComponent, componentType, 'name, style, usePureComponent, componentType')
     createReactComponent(name, style, usePureComponent, componentType)
 
-    console.log('done!')
+    console.log('创建完成!')
 })()
